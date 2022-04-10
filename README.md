@@ -87,7 +87,7 @@ Multimedia Codecs
 ``` Bash
 sudo dnf groupupdate sound-and-video
 sudo dnf install -y libdvdcss
-sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,ugly-\*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg 
+sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,ugly-\*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
 sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade --with-optional Multimedia
 ```
@@ -155,3 +155,16 @@ sudo ln -s /var/lib/snapd/snap /snap # for classic snap support
 sudo reboot now
 sudo snap refresh
 ```
+
+Mozilla settings (about:config)
+'''
+gfx.webrender.all **true**
+widget.wayland-dmabuf-vaapi **true**
+widget.wayland-dmabuf-vaapi.enabled **true**
+
+apz.gtk.kinetic_scroll.enabled **true**
+mousewheel.default.delta_multiplier_ **true**
+mousewheel.default.delta_multiplier_x **300**
+mousewheel.default.delta_multiplier_y **300**
+mousewheel.default.delta_multiplier_z **300**
+'''
