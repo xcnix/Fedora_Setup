@@ -1,5 +1,7 @@
 # Fedora 36 setup
 
+![Рабочий стол](Desktop.png)
+
 Remove garbage
 
 ``` Bash
