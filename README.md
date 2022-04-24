@@ -5,7 +5,7 @@
 Remove garbage
 
 ```Bash
-sudo dnf remove gnome-connections gnome-boxes gnome-contacts gnome-logs gnome-maps gnome-abrt gnome-tour
+sudo dnf remove gnome-connections gnome-boxes gnome-contacts gnome-logs gnome-maps gnome-abrt gnome-tour gnome-photos
 ```
 
 Speed up DNF
@@ -27,7 +27,7 @@ sudo dnf update -y & sudo dnf upgrade -y
 Install useful tools
 
 ```Bash
-sudo dnf install kmod-v4l2loopback obs-studio gnome-extensions-app tlp tlp-rdw vlc bleachbit gnome-tweaks okular -y
+sudo dnf install htop neofetch kmod-v4l2loopback obs-studio gnome-extensions-app tlp tlp-rdw vlc bleachbit gnome-tweaks gthumb okular discord -y
 ```
 
 Enable TLP
@@ -78,18 +78,12 @@ sudo dnf install fontconfig-font-replacements -y
 sudo dnf install fontconfig-enhanced-defaults -y
 ```
 
-Multimedia Plugins
-
-```Bash
-sudo dnf install gstreamer1-plugins-base gstreamer1-plugins-good gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free gstreamer1-plugins-bad-freeworld gstreamer1-plugins-bad-free-extras ffmpeg
-```
-
-Multimedia Codecs
+Multimedia
 
 ```Bash
 sudo dnf groupupdate sound-and-video
 sudo dnf install -y libdvdcss
-sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,ugly-\*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel ffmpeg gstreamer-ffmpeg
+sudo dnf install -y gstreamer1-plugins-{bad-\*,good-\*,ugly-\*,base} gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel gstreamer1-plugin-openh264 ffmpeg gstreamer-ffmpeg
 sudo dnf install -y lame\* --exclude=lame-devel
 sudo dnf group upgrade --with-optional Multimedia
 ```
@@ -142,15 +136,6 @@ Spotify
 sudo flatpak install spotify
 ```
 
-Snap
-
-```Bash
-sudo dnf install -y snapd
-sudo ln -s /var/lib/snapd/snap /snap # for classic snap support
-sudo reboot now
-sudo snap refresh
-```
-
 Firefox settings (about:config)
 
 ```Firefox
@@ -163,4 +148,13 @@ mousewheel.default.delta_multiplier_ **true**
 mousewheel.default.delta_multiplier_x **300**
 mousewheel.default.delta_multiplier_y **300**
 mousewheel.default.delta_multiplier_z **300**
+```
+
+Snap
+
+```Bash
+sudo dnf install -y snapd
+sudo ln -s /var/lib/snapd/snap /snap # for classic snap support
+sudo reboot now
+sudo snap refresh
 ```
