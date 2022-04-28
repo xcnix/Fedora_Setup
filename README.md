@@ -1,4 +1,4 @@
-# Fedora 36 setup
+# Fedora 36, Gnome 42 setup
 
 ![Рабочий стол](Desktop.png)
 
@@ -27,7 +27,7 @@ sudo dnf update -y & sudo dnf upgrade -y
 Install useful tools
 
 ```Bash
-sudo dnf install htop neofetch kmod-v4l2loopback obs-studio gnome-extensions-app tlp tlp-rdw vlc bleachbit gnome-tweaks gthumb okular discord -y
+sudo dnf install htop neofetch kmod-v4l2loopback obs-studio gnome-extensions-app tlp tlp-rdw vlc bleachbit gnome-tweaks gthumb okular discord npm -y
 ```
 
 Enable TLP
@@ -101,13 +101,11 @@ sudo dnf install -y curl cabextract xorg-x11-font-utils fontconfig
 sudo rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 ```
 
-VS Code
+VS Codium
 
 ```Bash
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-dnf check-update
-sudo dnf install code
+https://github.com/vscodium/vscodium/releases
+sudo dnf install codium*.rpm
 ```
 
 Python

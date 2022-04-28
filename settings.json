@@ -1,0 +1,35 @@
+{
+  "editor.fontSize": 17,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.bracketPairColorization.enabled": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.wordWrap": "on",
+  "oneDarkPro.vivid": true,
+  "git.confirmSync": false,
+  "telemetry.telemetryLevel": "off",
+  "update.showReleaseNotes": false,
+  "files.autoSave": "onFocusChange",
+  "terminal.integrated.fontSize": 18,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.linkedEditing": true,
+  "security.workspace.trust.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.idea": true,
+    "**/.vscode": true,
+    "**/node_modules": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "vscode-great-icons"
+}
+
